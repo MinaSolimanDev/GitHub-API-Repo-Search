@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import './styles/variables';
+
+
+html,
+body,
+p {
+    color: $main-text-color;
+}
+
+.fullname {
+    color: #a72da3;
+}
+
+.time {
+    color: #d68000;
+}
+
+.details {
+    color: #bf1818;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.inline {
+    display: inline-block;
+}
+

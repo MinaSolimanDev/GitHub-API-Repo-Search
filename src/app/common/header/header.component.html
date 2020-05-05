@@ -1,0 +1,14 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <a class="navbar-brand" routerLink="/repos"> Git Repo Search </a>
+
+  <form class="form-inline mt-2 mt-md-0" (ngSubmit)='search(searchForm)' #searchForm='ngForm'>
+    <input class="form-control mr-sm-2" type="search" aria-label="Search" placeholder="Search Repos" [(ngModel)]='repo' #re='ngModel' name='re' required autocomplete="on">
+    <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+  </form>
+
+  <div *ngIf="re.invalid && (re.dirty || re.touched)">
+    <span class="form-inline alert alert-warning mt-2 mt-md-0 my-2 my-sm-0 ml-2" *ngIf="re?.errors.required">Repo is required</span>
+  </div>
+
+</nav>

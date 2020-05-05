@@ -1,0 +1,36 @@
+<mat-nav-list>
+  <div class="profile-card" id="repoDetails">
+      <div class="header">
+          <h4 class="fullname pb-4">{{repo.full_name}}</h4>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+            <img src="{{repo.owner.avatar_url}}" alt="">
+        </div>
+      </div>
+
+      <hr>
+      <div>
+        <h5 class="text-info">Description: {{repo.description}}</h5>
+      </div>
+
+      <hr>
+      <div class="mt-2 time">
+        <h6><mat-icon>timelapse</mat-icon> Created: {{repo.created_at}}</h6>
+        <h6><mat-icon>timelapse</mat-icon> Updated: {{repo.updated_at}}</h6>
+      </div>
+
+      <hr>
+      <div>
+        <a class="btn btn-outline-info mt-3 mr-3" href="{{repo.owner.html_url}}">Owner GitHub Link</a>
+        <a class="btn btn-outline-info mt-3" href="{{repo.html_url}}">Repo GitHub Link</a>
+      </div>
+
+      <hr>
+      <div class="details">
+        <div><h6> <mat-icon>language</mat-icon> Languages: {{repo.language}}</h6> </div>
+        <div><h6> <mat-icon>star</mat-icon> Star: {{repo.stargazers_count}}</h6> </div>
+        <div><h6> <mat-icon>call_split</mat-icon> Forks Count: {{repo.forks_count}}</h6> </div>
+        <div> <h6>Size: {{repo.size}}</h6> </div>
+      </div>
+    </div>

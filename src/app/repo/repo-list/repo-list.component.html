@@ -1,0 +1,14 @@
+<div *ngIf='resultFound()'>
+  <section id="reposListing">
+    <h1 class="title pb-3 fullname ml-3">Repos</h1>
+    <div class="row">
+        <div class="col-md-3 col-xs-6" *ngFor="let repo of searchRepos">
+            <app-repo-list-item [repo]="repo"></app-repo-list-item>
+        </div>
+    </div>
+  </section>
+</div>
+
+<div *ngIf='!repo' class="p-5 text-info">
+  <h1 class=" border-dark border text-center p-5 jumbotron"> Insert Repo To Start Find Repos Info </h1>
+</div>

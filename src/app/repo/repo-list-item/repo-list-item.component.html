@@ -1,0 +1,13 @@
+<a routerLink="/repos/{{repo.full_name}}">
+    <div class="card bwm-card">
+        <img class="card-img-top rounded-circle" src="{{repo.owner.avatar_url}}" alt="">
+        <div class="card-block text-center">
+          <h3 class="card-title mt-3">Repo: {{repo.full_name}}</h3>
+          <div><h3 class="card-text"><mat-icon>star</mat-icon> Star: {{repo.stargazers_count}}</h3></div>
+          <div><h6 class="card-text mb-2"> <mat-icon>language</mat-icon> Languages: {{repo.language}}</h6> </div>
+          <h3 class="card-title mt-4">{{repo.description}}</h3>  
+        </div>
+    </div>
+</a>
+
+<hr>
