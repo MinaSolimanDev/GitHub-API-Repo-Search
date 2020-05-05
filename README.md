@@ -1,7 +1,7 @@
 
 
 
-=> Project Live : https://5eb1cbf11ab41770ee950a87--hopeful-bhabha-83ccdc.netlify.app
+=> Project Live : https://github-1search-api.netlify.app
 
 # Badge-Well Angular Task
 
